@@ -1,6 +1,8 @@
 # read_time_in_germany
 Input Hour and Minute. The script will convert to string in German.
 
+If you want to practice with number in Germany please have a look at http://langpractice.com/german/#. This is awesome.
+
 
 ## For learning A1. Feel free to contribute.
 
