@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <h1>Convert hour and minute into string in German (informal)</h1>
+    <h1>Copyright by: Eric Vu </h1>
+    
+    
+    Hour:<br>
+    <input type="number" name="hour" id="hour">
+    <br>
+    Minute:<br>
+    <input type="number" name="minute" id="minute">
+    <br><br>
+    <button onclick="handleClick()">Convert</button>
+
+    
+    <ul id="result"></ul>
+    <script>
+      function listCourses() {
+                }
+      function handleClick() {
+        var hour = document.getElementById("hour").value;
+        var minute = document.getElementById("minute").value;
+        hour = parseInt(hour) || 0;
+        minute = parseInt(minute) || 0;
+        console.log(hour);
+        console.log(minute);
+        google.script.run
+            .withSuccessHandler(function(response){
+              var responseString = "<li>" + response + "</li>";
+              
+              var tmpString = document.getElementById('result').innerHTML;
+              tmpString = responseString + tmpString;
+              document.getElementById('result').innerHTML = tmpString;
+            })
+            .withFailureHandler(function(err){
+              console.log(err);
+            })
+            .convertHourMinute(hour, minute);
+
+      }
+    </script>
+  </body>
+</html>
+
+
