@@ -26,8 +26,6 @@
         var minute = document.getElementById("minute").value;
         hour = parseInt(hour) || 0;
         minute = parseInt(minute) || 0;
-        console.log(hour);
-        console.log(minute);
         google.script.run
             .withSuccessHandler(function(response){
               var responseString = "<li>" + response + "</li>";
