@@ -9,9 +9,8 @@ If you want to practice with number in Germany please have a look at http://lang
 
 read_time.rb is written by Ruby to create prompt in console.
 
-Code.gs and main.html are used to render App Google Script.
-
-App Google Script: https://script.google.com/macros/s/AKfycbwQLD7-BrUDOxBDGsd08xoWkqi_1F3H3ysGwGkZXhs/dev
+Code.gs and main.html are used to render App Google Script: 
+https://script.google.com/macros/s/AKfycbwQLD7-BrUDOxBDGsd08xoWkqi_1F3H3ysGwGkZXhs/dev
 
 ## Improvements:
 - Create a service via API to get params hour, minute then response appropriate c
